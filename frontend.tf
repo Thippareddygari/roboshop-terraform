@@ -7,10 +7,10 @@ resource "aws_instance" "frontend" {
   }
 }
 
-resource "aws_route53_record" "frontend_record" {
-  ttl = 0
-  name = "frontend-dev"
-  zone_id = "Z10310253KPZLFJOC7YEK"
-  records = [aws_instance.frontend.public_ip]
-  type = "A"
-}
+# resource "aws_route53_record" "frontend_record" {
+#   ttl = 0
+#   name = "frontend-dev"
+#   zone_id = "Z10310253KPZLFJOC7YEK"
+#   records = [aws_instance.frontend.public_ip]
+#   type = "A"
+# }
