@@ -21,7 +21,8 @@ resource "aws_eks_node_group" "name" {
   node_role_arn = aws_iam_role.node-role.arn
   subnet_ids = var.subnets
   instance_types = each.value["instance_types"]
-  capacity_type = "spot"
+  //capacity_type = ["spot"]
+   capacity_type = "spot"
 
   scaling_config {
     desired_size = each.value["min_nodes"]
