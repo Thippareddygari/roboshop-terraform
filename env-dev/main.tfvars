@@ -1,5 +1,7 @@
 env="dev"
-
+instances ={
+    
+}
 eks =  {
    main = {
     subnets= ["subnet-0c19f3c7a2ba2788e","subnet-0ac7bbd1695882a29"]
