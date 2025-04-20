@@ -9,3 +9,7 @@ variable "env" {}
 variable "eks" {
   
 }
+
+variable "vault_token" {
+  
+}
