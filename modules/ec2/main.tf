@@ -28,9 +28,9 @@ resource "null_resource" "catalogue" {
       password = "DevOps321"
       host = aws_instance.instance.private_ip
     }
-    inline ={
+    inline =[
       "sudo pip3.11 install ansible",
       "ansible-pull -i localhost, -U https://github.com/Thippareddygari/roboshop-ansible roboshop.yml -e component_name=${var.name} -e env={var.dev}",  
-    }
+    ]
   }
 }
