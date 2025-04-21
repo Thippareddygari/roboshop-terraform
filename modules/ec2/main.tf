@@ -2,10 +2,10 @@ resource "aws_instance" "instance" {
   ami = var.ami_id
   instance_type = var.instance_type
   vpc_security_group_ids = var.vpc_security_group_ids
-  instance_market_options {
-     market_type = "spot"
+  # instance_market_options {
+  #    market_type = "spot"
    
-  }
+  # }
   tags = {
     Name = var.name
   }
