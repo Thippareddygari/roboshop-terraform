@@ -2,23 +2,23 @@ env="dev"
 db_instances ={
   mongodb = {
     ami_id           = "ami-09c813fb71547fc4f"
-    instance_type    = "t3.small"
+    instance_type    = "t3.micro"
     root_volume_size = 15
   }
   redis = {
     ami_id           = "ami-09c813fb71547fc4f"
-    instance_type    = "t3.small"
+    instance_type    = "t3.micro"
     root_volume_size = 15
   }
 
   mysql = {
     ami_id           = "ami-09c813fb71547fc4f"
-    instance_type    = "t3.small"
+    instance_type    = "t3.micro"
     root_volume_size = 15
   }
   rabbitmq = {
     ami_id           = "ami-09c813fb71547fc4f"
-    instance_type    = "t3.small"
+    instance_type    = "t3.micro"
     root_volume_size = 15
   }
 }
