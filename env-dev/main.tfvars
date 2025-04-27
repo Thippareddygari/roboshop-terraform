@@ -34,7 +34,7 @@ eks =  {
         main ={
             min_nodes= 1
             max_nodes= 1
-            instance_types=["t3.medium","t3.medium"]
+            instance_types=["t2.small","t2.small"]
         }
     }
 }
